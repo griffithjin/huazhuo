@@ -55,7 +55,7 @@ class Settings(BaseSettings):
     # 阿里云短信
     SMS_ACCESS_KEY: str = ""
     SMS_SECRET: str = ""
-    SMS_SIGN_NAME: str = "寰卓科技"
+    SMS_SIGN_NAME: str = "寰卓数字"
     SMS_TEMPLATE_CODE_LOGIN: str = "SMS_12345678"
     
     # 业务配置

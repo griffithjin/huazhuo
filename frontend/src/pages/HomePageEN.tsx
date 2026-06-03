@@ -51,7 +51,7 @@ const HomePageEN: React.FC = () => {
       }}>
         <div style={{ marginBottom: 16 }}>
           <Tag color="gold" style={{ fontSize: 14, padding: '4px 12px' }}>
-            <GlobalOutlined /> 寰卓 AI COMPUTE LIMITED
+            <GlobalOutlined /> 杭州寰卓数字科技有限公司
           </Tag>
         </div>
         <Title level={1} style={{ color: '#fff', marginBottom: 16 }}>
@@ -295,7 +295,7 @@ const HomePageEN: React.FC = () => {
 
       {/* Footer */}
       <div style={{ padding: '32px 20px', textAlign: 'center', background: '#001529', color: 'rgba(255,255,255,0.65)' }}>
-        <p>© 2026 寰卓 AI COMPUTE LIMITED. All rights reserved.</p>
+        <p>© 2026 杭州寰卓数字科技有限公司. All rights reserved.</p>
         <p>寰卓 — Hyper Smart AI Limitless</p>
         <p>Privacy Policy | Terms of Service | Contact Us</p>
       </div>

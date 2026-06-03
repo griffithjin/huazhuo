@@ -87,7 +87,7 @@ const defaultConfig: SystemConfig = {
 
   sms_access_key: '',
   sms_secret: '',
-  sms_sign_name: '寰卓科技',
+  sms_sign_name: '寰卓数字',
   sms_template_code: '',
   sms_enabled: false,
 
@@ -98,7 +98,7 @@ const defaultConfig: SystemConfig = {
   jwt_expire_minutes: 60,
   encryption_key: '',
 
-  platform_name: '寰卓 - 寰卓科技',
+  platform_name: '寰卓',
   platform_logo: '/logo.png',
   contact_phone: '400-xxx-xxxx',
   contact_email: 'support@寰卓.tech',
@@ -327,7 +327,7 @@ const SystemConfigPage: React.FC = () => {
               </Form.Item>
 
               <Form.Item name="model_router_discount" label="采购折扣率 (%)"
-                tooltip="从 ModelRouter/百炼采购 Token 的折扣，寰卓科技报价单: 月消费30万享68折, 50万享64折">
+                tooltip="从 ModelRouter/百炼采购 Token 的折扣，寰卓报价单: 月消费30万享68折, 50万享64折">
                 <InputNumber min={10} max={100} suffix="%" style={{ width: 200 }} />
               </Form.Item>
 
@@ -363,8 +363,8 @@ const SystemConfigPage: React.FC = () => {
               </Form.Item>
 
               <Form.Item name="sms_sign_name" label="短信签名"
-                tooltip="在阿里云短信控制台申请的签名，如 '寰卓科技'">
-                <Input placeholder="寰卓科技" />
+                tooltip="在阿里云短信控制台申请的签名，如 '寰卓数字'（建议4字以内）">
+                <Input placeholder="寰卓数字" />
               </Form.Item>
 
               <Form.Item name="sms_template_code" label="验证码模板CODE"
@@ -382,7 +382,7 @@ const SystemConfigPage: React.FC = () => {
             <Card title="模型定价管理">
               <Alert
                 message="模型定价策略"
-                description="以下模型定价基于阿里云百炼官方价格 × 寰卓科技折扣(68折) × 平台加价系数(2.0)。确保平台保有约50%毛利率，可持续运营。"
+                description="以下模型定价基于阿里云百炼官方价格 × 寰卓折扣(68折) × 平台加价系数(2.0)。确保平台保有约50%毛利率，可持续运营。"
                 type="info"
                 showIcon
                 style={{ marginBottom: 16 }}
@@ -481,7 +481,7 @@ const SystemConfigPage: React.FC = () => {
           <TabPane tab="🟡 平台信息" key="platform">
             <Card title="平台基本信息">
               <Form.Item name="platform_name" label="平台名称">
-                <Input placeholder="寰卓 - 寰卓科技" />
+                <Input placeholder="寰卓" />
               </Form.Item>
 
               <Form.Item name="platform_logo" label="Logo URL">
@@ -599,7 +599,7 @@ const SystemConfigPage: React.FC = () => {
               <Form.Item name="privacy_policy" label="隐私政策 (Privacy Policy)"><Input.TextArea rows={8} placeholder="在此粘贴隐私政策完整内容..." /></Form.Item>
               <Form.Item name="terms_of_service" label="服务条款 (Terms of Service)"><Input.TextArea rows={8} placeholder="在此粘贴服务条款完整内容..." /></Form.Item>
               <Form.Item name="contact_info" label="联系我们 (Contact Us)"><Input.TextArea rows={6} placeholder="公司地址、电话、邮箱..." /></Form.Item>
-              <Form.Item name="company_name" label="公司注册名"><Input placeholder="寰卓科技 / 寰卓 AI COMPUTE LIMITED" /></Form.Item>
+              <Form.Item name="company_name" label="公司注册名"><Input placeholder="杭州寰卓数字科技有限公司" /></Form.Item>
               <Form.Item name="company_address" label="注册地址"><Input placeholder="公司注册地址" /></Form.Item>
               <Form.Item name="business_license" label="营业执照号"><Input placeholder="统一社会信用代码" /></Form.Item>
             </Card>

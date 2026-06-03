@@ -26,7 +26,7 @@ const LoginPage: React.FC = () => {
     }}>
       <Card style={{ width: 400, borderRadius: 12 }}>
         <div style={{ textAlign: 'center', marginBottom: 32 }}>
-          <Title level={3}>目前AI</Title>
+          <Title level={3}>寰卓</Title>
           <p style={{ color: '#8c8c8c' }}>手机号验证码登录</p>
         </div>
         

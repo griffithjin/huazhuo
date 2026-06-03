@@ -16,7 +16,7 @@ const OnboardingFlow: React.FC<OnboardingProps> = ({ visible, onClose, onComplet
 
   const steps = [
     {
-      title: 'Welcome to 目前AI',
+      title: 'Welcome to 寰卓',
       icon: <RocketOutlined />,
       description: 'Your Gateway to China\'s Best AI Models',
       content: (
@@ -24,7 +24,7 @@ const OnboardingFlow: React.FC<OnboardingProps> = ({ visible, onClose, onComplet
           <Avatar size={80} icon={<GlobalOutlined />} style={{ backgroundColor: '#1890ff', marginBottom: 20 }} />
           <Title level={3}>Hyper Smart AI Limitless</Title>
           <Paragraph type="secondary" style={{ fontSize: 16, maxWidth: 500, margin: '0 auto' }}>
-            目前AI 是中国版 OpenRouter，让你一键接入全球顶级AI模型。
+            寰卓 是中国版 OpenRouter，让你一键接入全球顶级AI模型。
             <br />
             海外用户更可享受中国顶级大模型（Qwen/DeepSeek/GLM）！
           </Paragraph>
@@ -86,7 +86,7 @@ const OnboardingFlow: React.FC<OnboardingProps> = ({ visible, onClose, onComplet
             <Title level={4}>Your API Key is Ready</Title>
             <Paragraph>
               <Text code style={{ fontSize: 16, padding: '8px 16px' }}>
-                sk-目前AI-xxxxxxxxxxxx
+                sk-寰卓-xxxxxxxxxxxx
               </Text>
             </Paragraph>
             <Paragraph type="secondary">
@@ -95,7 +95,7 @@ const OnboardingFlow: React.FC<OnboardingProps> = ({ visible, onClose, onComplet
             <div style={{ marginTop: 16, textAlign: 'left', fontSize: 12, background: '#fff', padding: 12, borderRadius: 4 }}>
               <Text strong>Python 示例：</Text><br/>
               <Text type="secondary">import openai</Text><br/>
-              <Text type="secondary">client = openai.OpenAI(api_key="sk-目前AI-xxx", base_url="https://api.muqian.com/v1")</Text><br/>
+              <Text type="secondary">client = openai.OpenAI(api_key="sk-寰卓-xxx", base_url="https://api.huazhuo.tech/v1")</Text><br/>
               <Text type="secondary">response = client.chat.completions.create(model="qwen-plus", messages=[...])</Text>
             </div>
           </Card>
@@ -182,7 +182,7 @@ const OnboardingFlow: React.FC<OnboardingProps> = ({ visible, onClose, onComplet
               分享你的专属邀请码，好友注册后双方各得 <Text strong>¥10</Text> 额度
             </Paragraph>
             <div style={{ marginTop: 16, fontSize: 24, fontWeight: 'bold', color: '#fa8c16' }}>
-              你的邀请码：MUQIAN-2026
+              你的邀请码：HUANZHUO-2026
             </div>
             <Paragraph type="secondary" style={{ marginTop: 16 }}>
               🎯 邀请越多，平台折扣越低，节省成本返利给用户！
@@ -245,7 +245,7 @@ const OnboardingFlow: React.FC<OnboardingProps> = ({ visible, onClose, onComplet
             <div>✅ 邀请好友赚取奖励</div>
           </Space>
           <Paragraph type="secondary" style={{ marginTop: 20 }}>
-            任何问题请联系客服：support@muqian.com
+            任何问题请联系客服：support@huazhuo.tech
           </Paragraph>
         </div>
       )

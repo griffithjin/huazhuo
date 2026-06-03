@@ -78,8 +78,8 @@ export const IMAGE_MODELS: ModelConfig[] = [
 export const VIDEO_MODELS: ModelConfig[] = [
   { id: 'wan2.7-t2v-720p', name: '万相-文生视频-720P', provider: '阿里云百炼', category: 'video', description: '720P文生视频模型', features: ['文生视频', '720P', '5秒片段'], contextLength: '-', officialPricePer1KInput: 0, officialPricePer1KOutput: 0, costPer1KInput: 0, costPer1KOutput: 0, region: 'cn', freeQuota: 5 },
   { id: 'wan2.7-t2v-1080p', name: '万相-文生视频-1080P', provider: '阿里云百炼', category: 'video', description: '1080P高清文生视频', features: ['文生视频', '1080P', '高清'], contextLength: '-', officialPricePer1KInput: 0, officialPricePer1KOutput: 0, costPer1KInput: 0, costPer1KOutput: 0, region: 'cn', freeQuota: 3 },
-  { id: 'seedance-2.0', name: 'Seedance 2.0', provider: 'Higgsfield AI (ModelTop)', category: 'video', description: '高质量AI视频生成，多种风格和特效', features: ['高质量视频', '多种风格', '特效预设', '角色一致性'], contextLength: '-', officialPricePer1KInput: 0, officialPricePer1KOutput: 0, costPer1KInput: 0, costPer1KOutput: 0, region: 'us', geoRestriction: 'non-cn', freeQuota: 3 },
-  { id: 'seedance-pro', name: 'Seedance Pro', provider: 'Higgsfield AI (ModelTop)', category: 'video', description: '专业级AI视频生成，商业级质量', features: ['专业级质量', '长视频', '商业授权', '4K输出'], contextLength: '-', officialPricePer1KInput: 0, officialPricePer1KOutput: 0, costPer1KInput: 0, costPer1KOutput: 0, region: 'us', geoRestriction: 'non-cn', freeQuota: 1 },
+  { id: 'seedance-2.0', name: 'Seedance 2.0', provider: '寰卓海外模型', category: 'video', description: '高质量AI视频生成，多种风格和特效', features: ['高质量视频', '多种风格', '特效预设', '角色一致性'], contextLength: '-', officialPricePer1KInput: 0, officialPricePer1KOutput: 0, costPer1KInput: 0, costPer1KOutput: 0, region: 'us', geoRestriction: 'non-cn', freeQuota: 3 },
+  { id: 'seedance-pro', name: 'Seedance Pro', provider: '寰卓海外模型', category: 'video', description: '专业级AI视频生成，商业级质量', features: ['专业级质量', '长视频', '商业授权', '4K输出'], contextLength: '-', officialPricePer1KInput: 0, officialPricePer1KOutput: 0, costPer1KInput: 0, costPer1KOutput: 0, region: 'us', geoRestriction: 'non-cn', freeQuota: 1 },
 ];
 
 export const AUDIO_MODELS: ModelConfig[] = [

@@ -624,12 +624,12 @@ const SystemConfigPage: React.FC = () => {
             </Card>
           </TabPane>
 
-          <TabPane tab="🔗 ModelTop" key="modeltop">
-            <Card title="ModelTop.ai Integration" extra={<Tag color="blue">海外API</Tag>}>
-              <Alert message="ModelTop.ai 对接" description="用于接入Seedance 2.0等海外专属模型。" type="info" showIcon style={{ marginBottom: 16 }} />
-              <Form.Item name="modeltop_enabled" valuePropName="checked" label="启用 ModelTop"><Switch checkedChildren="启用" unCheckedChildren="关闭" /></Form.Item>
+          <TabPane tab="🔗 寰卓海外模型" key="modeltop">
+            <Card title="寰卓海外模型.ai Integration" extra={<Tag color="blue">海外API</Tag>}>
+              <Alert message="寰卓海外模型.ai 对接" description="用于接入Seedance 2.0等海外专属模型。" type="info" showIcon style={{ marginBottom: 16 }} />
+              <Form.Item name="modeltop_enabled" valuePropName="checked" label="启用 寰卓海外模型"><Switch checkedChildren="启用" unCheckedChildren="关闭" /></Form.Item>
               <Form.Item name="modeltop_api_key" label="API Key" rules={[{ required: true }]}><Input.Password placeholder="sk-..." /></Form.Item>
-              <Form.Item name="modeltop_base_url" label="Base URL"><Input placeholder="https://api.modeltop.ai/v1" /></Form.Item>
+              <Form.Item name="modeltop_base_url" label="Base URL"><Input placeholder="https://api.huazhuo.tech/v1" /></Form.Item>
               <Form.Item name="modeltop_models" label="支持模型"><Input placeholder="seedance-2.0, seedance-pro" /></Form.Item>
               <Alert message="合规提醒" description="Seedance等海外模型仅限非中国区用户访问，系统会自动根据IP进行地域限制。" type="warning" showIcon />
             </Card>

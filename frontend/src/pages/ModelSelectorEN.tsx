@@ -100,7 +100,7 @@ const ModelSelectorEN: React.FC = () => {
   const currentModel = ALL_MODELS.find(m => m.id === selectedModel);
 
   const codeExamples = {
-    curl: `curl https://api.modeltop.ai/v1/chat/completions \\
+    curl: `curl https://api.huazhuo.tech/v1/chat/completions \\
   -H "Authorization: Bearer ***" \\
   -H "Content-Type: application/json" \\
   -d '{
@@ -114,7 +114,7 @@ const ModelSelectorEN: React.FC = () => {
 
 client = openai.OpenAI(
     api_key="YOUR_API_KEY",
-    base_url="https://api.modeltop.ai/v1"
+    base_url="https://api.huazhuo.tech/v1"
 )
 
 response = client.chat.completions.create(
@@ -130,7 +130,7 @@ print(response.choices[0].message.content)`,
 
 const client = new OpenAI({
   apiKey: 'YOUR_API_KEY',
-  baseURL: 'https://api.modeltop.ai/v1'
+  baseURL: 'https://api.huazhuo.tech/v1'
 });
 
 async function main() {
@@ -154,7 +154,7 @@ main();`,
         <Paragraph type="secondary" style={{ fontSize: 16 }}>
           Choose the best AI model for your use case and get integration code instantly
         </Paragraph>
-        <Tag color="blue" icon={<GlobalOutlined />}>Base URL: https://modeltop.ai/docs/</Tag>
+        <Tag color="blue" icon={<GlobalOutlined />}>Base URL: https://huazhuo.tech/docs/</Tag>
       </div>
 
       <Alert

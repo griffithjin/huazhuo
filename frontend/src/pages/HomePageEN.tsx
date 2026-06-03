@@ -62,7 +62,7 @@ const HomePageEN: React.FC = () => {
         </Text>
         <Text style={{ fontSize: 16, color: 'rgba(255,255,255,0.85)', display: 'block', marginBottom: 32 }}>
           No technical background needed. Buy a package, get your API Key instantly.<br />
-          Powered by <a href="https://modeltop.ai/docs/" target="_blank" rel="noopener noreferrer" style={{ color: '#ffd700', textDecoration: 'underline' }}>modeltop.ai</a> — China's top AI model aggregator
+          Powered by <a href="https://huazhuo.tech/docs/" target="_blank" rel="noopener noreferrer" style={{ color: '#ffd700', textDecoration: 'underline' }}>huazhuo.tech</a> — China's top AI model aggregator
         </Text>
         <Space>
           <Button type="primary" size="large" onClick={() => navigate('/en/packages')}>
@@ -215,7 +215,7 @@ const HomePageEN: React.FC = () => {
                 <li>Character consistency across scenes</li>
                 <li>720P / 1080P / 4K output options</li>
                 <li>Commercial usage license included</li>
-                <li>Powered by Higgsfield AI via ModelTop</li>
+                <li>Powered by 寰卓海外模型</li>
               </ul>
               <Tag color="red">Non-China Users Only</Tag>
               <Text type="secondary" style={{ display: 'block', marginTop: 8 }}>
@@ -275,7 +275,7 @@ const HomePageEN: React.FC = () => {
         </Title>
         <Card style={{ maxWidth: 800, margin: '0 auto' }}>
           <pre style={{ background: '#f6f8fa', padding: 16, borderRadius: 8, overflow: 'auto' }}>
-            <code>{`curl https://api.modeltop.ai/v1/chat/completions \\
+            <code>{`curl https://api.huazhuo.tech/v1/chat/completions \\
   -H "Authorization: Bearer YOUR_API_KEY" \\
   -H "Content-Type: application/json" \\
   -d '{
@@ -288,7 +288,7 @@ const HomePageEN: React.FC = () => {
           </pre>
           <div style={{ textAlign: 'center', marginTop: 16 }}>
             <Text type="secondary">Base URL: </Text>
-            <Text code copyable>https://modeltop.ai/docs/</Text>
+            <Text code copyable>https://huazhuo.tech/docs/</Text>
           </div>
         </Card>
       </div>

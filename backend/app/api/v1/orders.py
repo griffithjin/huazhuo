@@ -46,7 +46,7 @@ async def create_order(
             "out_trade_no": order.order_no,
             "total_amount": str(order.pay_amount)
         }
-        payment_data["pay_url"] = f"https://tokenhub.com/pay/{order.uuid}"
+        payment_data["pay_url"] = f"https://huazhuo.tech/pay/{order.uuid}"
     
     return success_response(data={
         "order": {

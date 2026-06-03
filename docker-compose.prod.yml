@@ -3,7 +3,7 @@ version: '3.8'
 services:
   frontend-prod:
     image: nginx:alpine
-    container_name: tokenhub-frontend-prod
+    container_name: huazhuo-frontend-prod
     ports:
       - "8080:80"
     volumes:
@@ -14,9 +14,9 @@ services:
 
   backend:
     build: ./backend
-    container_name: tokenhub-backend-prod
+    container_name: huazhuo-backend-prod
     environment:
-      - DATABASE_URL=postgresql://tokenhub:tokenhub@postgres:5432/tokenhub
+      - DATABASE_URL=postgresql://huazhuo:huazhuo@postgres:5432/huazhuo
       - REDIS_URL=redis://redis:6379/0
     ports:
       - "8000:8000"
@@ -26,17 +26,17 @@ services:
 
   postgres:
     image: postgres:15-alpine
-    container_name: tokenhub-postgres-prod
+    container_name: huazhuo-postgres-prod
     environment:
-      POSTGRES_USER: tokenhub
-      POSTGRES_PASSWORD: tokenhub
-      POSTGRES_DB: tokenhub
+      POSTGRES_USER: huazhuo
+      POSTGRES_PASSWORD: huazhuo
+      POSTGRES_DB: huazhuo
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
   redis:
     image: redis:7-alpine
-    container_name: tokenhub-redis-prod
+    container_name: huazhuo-redis-prod
     volumes:
       - redis_data:/data
 

@@ -29,7 +29,7 @@ DEBUG=false
 JWT_SECRET=$(openssl rand -hex 32)
 
 # 数据库
-DATABASE_URL=postgresql://tokenhub:tokenhub@postgres:5432/tokenhub
+DATABASE_URL=postgresql://huazhuo:huazhuo@postgres:5432/huazhuo
 
 # Redis
 REDIS_URL=redis://redis:6379/0

@@ -44,7 +44,7 @@ app = FastAPI(
 # CORS配置
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"] if settings.DEBUG else ["https://tokenhub.com"],
+    allow_origins=["*"] if settings.DEBUG else ["https://huazhuo.tech"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

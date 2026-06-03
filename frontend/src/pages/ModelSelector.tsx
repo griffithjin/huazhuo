@@ -96,7 +96,7 @@ const ModelSelector: React.FC = () => {
 
   // 代码示例
   const codeExamples = {
-    curl: `curl https://api.tokenhub.寰卓.tech/v1/chat/completions \\
+    curl: `curl https://api.huazhuo.寰卓.tech/v1/chat/completions \\
   -H "Authorization: Bearer YOUR_API_KEY" \\
   -H "Content-Type: application/json" \\
   -d '{
@@ -110,7 +110,7 @@ const ModelSelector: React.FC = () => {
 
 client = openai.OpenAI(
     api_key="YOUR_API_KEY",
-    base_url="https://api.tokenhub.寰卓.tech/v1"
+    base_url="https://api.huazhuo.寰卓.tech/v1"
 )
 
 response = client.chat.completions.create(
@@ -126,7 +126,7 @@ print(response.choices[0].message.content)`,
 
 const client = new OpenAI({
   apiKey: 'YOUR_API_KEY',
-  baseURL: 'https://api.tokenhub.寰卓.tech/v1'
+  baseURL: 'https://api.huazhuo.寰卓.tech/v1'
 });
 
 async function main() {

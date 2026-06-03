@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     PORT: int = 8000
     
     # 数据库
-    DATABASE_URL: str = "postgresql://tokenhub:tokenhub@localhost:5432/tokenhub"
+    DATABASE_URL: str = "postgresql://huazhuo:huazhuo@localhost:5432/huazhuo"
     DB_POOL_SIZE: int = 20
     DB_MAX_OVERFLOW: int = 10
     
@@ -49,13 +49,13 @@ class Settings(BaseSettings):
     ALIPAY_APP_PRIVATE_KEY: str = ""  # 应用私钥
     ALIPAY_PUBLIC_KEY: str = ""  # 支付宝公钥
     ALIPAY_SANDBOX: bool = True
-    ALIPAY_NOTIFY_URL: str = "https://api.tokenhub.com/v1/orders/callback/alipay"
-    ALIPAY_RETURN_URL: str = "https://tokenhub.com/pay/success"
+    ALIPAY_NOTIFY_URL: str = "https://api.huazhuo.tech/v1/orders/callback/alipay"
+    ALIPAY_RETURN_URL: str = "https://huazhuo.tech/pay/success"
     
     # 阿里云短信
     SMS_ACCESS_KEY: str = ""
     SMS_SECRET: str = ""
-    SMS_SIGN_NAME: str = "目前科技"
+    SMS_SIGN_NAME: str = "寰卓科技"
     SMS_TEMPLATE_CODE_LOGIN: str = "SMS_12345678"
     
     # 业务配置

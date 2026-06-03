@@ -39,7 +39,7 @@ const AdminLayoutEN: React.FC = () => {
           textAlign: 'center'
         }}>
           <GlobalOutlined style={{ marginRight: 8 }} />
-          HSALL GLOBAL
+          寰卓
         </div>
         <Menu
           theme="dark"

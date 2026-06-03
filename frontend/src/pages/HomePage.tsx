@@ -195,7 +195,7 @@ const HomePage: React.FC = () => {
 
       {/* Footer */}
       <div style={{ padding: '32px 20px', textAlign: 'center', background: '#001529', color: 'rgba(255,255,255,0.65)' }}>
-        <p>© 2026 目前科技 寰卓. All rights reserved.</p>
+        <p>© 2026 寰卓科技 寰卓. All rights reserved.</p>
         <p>隐私政策 | 服务条款 | 联系我们</p>
       </div>
     </div>

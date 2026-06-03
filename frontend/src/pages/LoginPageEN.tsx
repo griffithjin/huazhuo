@@ -29,7 +29,7 @@ const LoginPageEN: React.FC = () => {
         <div style={{ textAlign: 'center', marginBottom: 32 }}>
           <Title level={3} style={{ marginBottom: 8 }}>
             <GlobalOutlined style={{ marginRight: 8 }} />
-            HSALL GLOBAL AI
+            寰卓 AI
           </Title>
           <p style={{ color: '#8c8c8c' }}>Access China's Best AI Models from Anywhere</p>
         </div>

@@ -1,0 +1,26 @@
+fastapi==0.110.0
+uvicorn[standard]==0.27.0
+sqlalchemy==2.0.25
+alembic==1.13.0
+psycopg2-binary==2.9.9
+redis==5.0.1
+celery==5.3.4
+pydantic==2.6.0
+pydantic-settings==2.1.0
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+httpx==0.26.0
+python-alipay-sdk==3.3.0
+cryptography==42.0.0
+PyYAML==6.0.1
+python-dotenv==1.0.0
+structlog==24.1.0
+prometheus-client==0.19.0
+pytest==8.0.0
+pytest-asyncio==0.23.0
+# 阿里云SDK
+aliyun-python-sdk-core==2.15.1
+aliyun-python-sdk-dysmsapi==2.1.2
+# 签名工具
+requests==2.31.0

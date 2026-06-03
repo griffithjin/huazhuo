@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>寰卓 - 目前科技</title>
+<script>
+(function(){
+  var l = window.location;
+  var segmentCount = 1;
+  var repo = l.pathname.split('/').slice(0, segmentCount + 1).join('/');
+  var path = l.pathname.slice(1).split('/').slice(segmentCount).join('/');
+  sessionStorage.redirect = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + repo + '/' + path + l.search + l.hash;
+  l.replace(repo + '/');
+})();
+</script>
+</head>
+<body><p>Redirecting...</p></body>
+</html>

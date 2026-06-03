@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  frontend-prod:
+    image: nginx:alpine
+    container_name: tokenhub-frontend-prod
+    ports:
+      - "8080:80"
+    volumes:
+      - ./frontend/dist:/usr/share/nginx/html:ro
+      - ./frontend/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    container_name: tokenhub-backend-prod
+    environment:
+      - DATABASE_URL=postgresql://tokenhub:tokenhub@postgres:5432/tokenhub
+      - REDIS_URL=redis://redis:6379/0
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+      - redis
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: tokenhub-postgres-prod
+    environment:
+      POSTGRES_USER: tokenhub
+      POSTGRES_PASSWORD: tokenhub
+      POSTGRES_DB: tokenhub
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: tokenhub-redis-prod
+    volumes:
+      - redis_data:/data
+
+volumes:
+  postgres_data:
+  redis_data:
